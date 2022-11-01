@@ -1,0 +1,58 @@
+.btn{
+    position: relative;
+    padding: 11px 25px;
+    background-color: $main-color;
+    border-radius: 3px;
+    color: #000;
+    transition: all 1s;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    animation: glowing 2s infinite;
+    @keyframes glowing {
+        0% {
+          background-color: $main-color;
+          box-shadow: 0 0 3px $main-color;
+        }
+        50% {
+          background-color: #c7700c;
+          box-shadow: 0 0 15px #c7700c;
+        }
+        100% {
+          background-color: $main-color;
+          box-shadow: 0 0 3px $main-color;
+        }
+    }
+      
+    &:hover{
+        background: #000; 
+        color: $main-color;
+        text-decoration: none;
+        transition: all 1s;
+        animation:none;
+        &:before {  
+            opacity: 1;
+            }
+    }
+    &:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glow 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 3px;
+    } 
+} 
+@keyframes glow {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
