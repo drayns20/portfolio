@@ -44,6 +44,44 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake snowflake-blue">
+        ❅
+        </div>
+        <div class="snowflake snowflake-yellow">
+        ❆
+        </div>
+        <div class="snowflake snowflake-green">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake snowflake-yellow">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake snowflake-blue">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake snowflake-purple">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+      </div>
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-7.46167e-07 2.92969L-1.28061e-07 17.0703C-5.74539e-08 18.6856 1.31439 20 2.92969 20L17.0703 20C18.6856 20 20 18.6856 20 17.0703L20 11.1719L12.9297 11.1719L12.9297 13.5156L9.41406 13.5156L9.41406 11.1719L7.03125 11.1719C5.09262 11.1719 3.51562 9.59488 3.51562 7.65625L3.51562 4.10156L7.03125 4.10156L7.03125 7.65625L9.41406 7.65625L9.41406 4.10156L12.9297 4.6875L12.9297 7.65625L20 7.65625L20 2.92969C20 1.31439 18.6856 -8.16774e-07 17.0703 -7.46167e-07L2.92969 -1.28061e-07C1.31439 -5.74539e-08 -8.16774e-07 1.31439 -7.46167e-07 2.92969Z" fill="black"/>
@@ -370,13 +408,13 @@
                 <a href="#" class="portfolio__item">
                     <img src="img/works/bread.jpg" alt="bread">
                 </a>
-                <a href="#" class="portfolio__item vertical">
+                <a href="#" class="portfolio__item portfolio__item-vertical">
                     <img src="img/works/plans.jpg" alt="plans">
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" alt="ipad">
                 </a>
-                <a href="#" class="portfolio__item horizontal">
+                <a href="#" class="portfolio__item portfolio__item-horizontal">
                     <img src="img/works/norway.jpg" alt="mac">
                 </a>
             </div>
@@ -420,9 +458,7 @@
                     <div class="title title_fz14 price__subtitle">Индивидуально</div>
                     <div class="price__text">Создам дизайн для вашего сайта/приложения...</div>
                 </div>
-                
             </div>
-
         </div>
     </section>
     <section class="contacts">
@@ -455,16 +491,15 @@
                                 <path d="M7.93685 6.93715C7.93685 6.38521 7.48942 5.93777 6.93748 5.93777C6.38554 5.93777 5.93811 6.38521 5.93811 6.93715C5.93811 7.48909 6.38554 7.93652 6.93748 7.93652C7.48942 7.93652 7.93685 7.48909 7.93685 6.93715Z" fill="black"/>
                             </svg>     
                         </a>
-
                     </div>
-                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:
+                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:
                     </div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
                             <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
-                        <div class="contacts__input">
+                        <div class="contacts__input contacts__input-mail">
                             <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
@@ -474,7 +509,7 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
-                            <button class="contacts__button btn slide">Отправить сообщение</button>
+                            <button class="contacts__button btn ">Отправить сообщение</button>
                             <div class="contacts__policy">
                                 <input required type="checkbox">
                                 <span>Я согласен(а) с<a href="/policy.html"> политикой конфиденциальности</a></span>  
